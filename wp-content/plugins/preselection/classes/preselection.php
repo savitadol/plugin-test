@@ -63,12 +63,12 @@ class Preselection {
         <?php
     }
 
+    /* Save product meta*/
     public function save_product_meta_box($post_id){
         // Check if our nonce is set.
         if ( ! isset( $_POST['_wpnonce'] ) ) {
             return $post_id;
         }
-
         /*
          * If this is an autosave, our form has not been submitted,
          * so we don't want to do anything.
@@ -76,7 +76,6 @@ class Preselection {
         if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
             return $post_id;
         }
-
         // Check the user's permissions.
         if ( 'product' == $_POST['post_type'] ) {
             if ( ! current_user_can( 'edit_page', $post_id ) ) {
@@ -93,7 +92,6 @@ class Preselection {
         // Update the meta field.
         update_post_meta( $post_id, 'preselection_indexing_meta_key', $index_field );
     }
-
     public function generate_custom_robots_meta(){
 
         if(get_post_type()=='product'){
@@ -124,6 +122,7 @@ class Preselection {
         }
     }
 
+    /* Displays the settings page HTML from view directory */
     public static function view( $name, array $args = array() ) {
         $args = apply_filters( 'preselection_view_arguments', $args, $name );
 
@@ -138,7 +137,7 @@ class Preselection {
         include( $file );
     }
 
-
+    /* get admin custom page URL */
 
     public static function get_page_url( $page = 'config' ) {
 
