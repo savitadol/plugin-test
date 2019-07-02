@@ -1,4 +1,7 @@
 <?php
+/**
+ * @package PreSelection
+ */
 
 class Preselection {
     private static $initiated = false;

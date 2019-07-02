@@ -4,7 +4,6 @@
  */
 /*
 Plugin Name: PreSelection
-Plugin URI: https://preselectiontest.matrixmarketers.com
 Description: To manage products title tag and add robots meta dynamically.
 Version: 1.0.0
 Author: Savita
