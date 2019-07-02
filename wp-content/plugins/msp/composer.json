@@ -1,0 +1,17 @@
+{
+    "name": "msp/msp",
+    "description": "This is MSP Plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "john@doe.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}

@@ -1,0 +1,20 @@
+2019-07-02T10:02:13+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php:18
+Stack trace:
+#0 /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php(9): Preselection::init_hooks()
+#1 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/class-wp-hook.php(286): Preselection::init('')
+#2 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /srv/users/preselectiontest/apps/preselectiontest/public/wp-settings.php(525): do_action('init')
+#5 /srv/users/preselectiontest/apps/preselectiontest/public/wp-config.php(82): require_once('/srv/users/pres...')
+#6 /srv/users/preselectiontest/apps/preselectiontest/public/wp-load.php(37): require_once('/srv/users/pres.. in /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php on line 18
+
+2019-07-02T10:03:45+00:00 CRITICAL Uncaught Error: Call to undefined function add_filsdter() in /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php:18
+Stack trace:
+#0 /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php(9): Preselection::init_hooks()
+#1 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/class-wp-hook.php(286): Preselection::init('')
+#2 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /srv/users/preselectiontest/apps/preselectiontest/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#4 /srv/users/preselectiontest/apps/preselectiontest/public/wp-settings.php(525): do_action('init')
+#5 /srv/users/preselectiontest/apps/preselectiontest/public/wp-config.php(82): require_once('/srv/users/pres...')
+#6 /srv/users/preselectiontest/apps/preselectiontest/public/wp-load.php(37): require_once('/srv/users/pre in /srv/users/preselectiontest/apps/preselectiontest/public/wp-content/plugins/preselection/classes/preselection.php on line 18
+
